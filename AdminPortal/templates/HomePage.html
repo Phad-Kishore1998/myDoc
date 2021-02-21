@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MyDoc</title>
+	<link rel="stylesheet" href="styles2.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+</head>
+<body>
+<style>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+   background-color: #f3f5f9;
+}
+
+.wrapper{
+  display: flex;
+  position: relative;
+}
+
+.wrapper .sidebar{
+  width: 300px;
+  height: 100%;
+  background: #38d39f;
+  padding: 30px 0px;
+  position: fixed;
+}
+
+.wrapper .sidebar h2{
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.4rem;
+
+}
+
+.wrapper .sidebar ul li{
+  padding: 30px;
+  border-bottom: 1px solid #f5f5f8;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(255,255,255,0.05);
+}    
+
+.wrapper .sidebar ul li a{
+  color: #fbfbfd;
+  display: block;
+}
+
+.wrapper .sidebar ul li a .fas{
+  width: 25px;
+}
+
+.wrapper .sidebar ul li:hover{
+  background-color: #66f09b;
+}
+    
+.wrapper .sidebar ul li:hover a{
+  color: #fff;
+}
+ 
+.wrapper .sidebar .social_media{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.wrapper .sidebar .social_media a{
+  display: block;
+  width: 40px;
+  background: #38d39f;
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  margin: 0 5px;
+  color: #0f0f0f;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.wrapper .main_content{
+  width: 100%;
+  margin-left: 300px;
+}
+
+.wrapper .main_content .header{
+  padding: 30px;
+  background: #fff;
+  color: #0a0909;
+  border-bottom: 1px solid #e0e4e8;
+}
+
+.wrapper .main_content .info{
+  margin: 20px;
+  color: #0c0b0bee;
+  line-height: 25px;
+}
+
+.wrapper .main_content .info div{
+  margin-bottom: 20px;
+}
+</style>
+
+
+  <div class="container">
+  <div class="img">
+    
+  </div>
+<div class="wrapper">
+  
+    <div class="sidebar">
+        <center><h1>MyDoc</h1></center>
+        <br>
+        <br>
+        <ul>
+            <li><a href="{{ url_for('dia') }}"></i>Diabetes</a></li><br><br>
+            <li><a href="{{ url_for('hypo') }}"></i>Hypoxemia</a></li><br><br>
+            <li><a href="{{ url_for('asth') }}"></i>Asthama</a></li><br><br> 
+            <li><a href="{{ url_for('pre') }}"></i>PredictionPage</a></li><br><br>            
+        </ul> 
+    </div>
+    <div class="main_content">
+    <center><h1>Welcome</h1></center>
+    <br>
+    <br>
+    <br>
+    <br>
+    <ul>
+    <p><li>
+    <center>
+    <h2 style= "color:green";> For Disease Related Details use side Navigation Bar</h2>
+    </center>
+    </li>
+    <br>
+    <br>
+    <center>
+    <h2 style= "color:green";> For checking Employee's health status use Prediction Page </h2>
+    </center>
+    </p>
+    </ul>
+    
+      </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
